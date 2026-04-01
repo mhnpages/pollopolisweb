@@ -361,7 +361,7 @@
   <p>Más sabor, más tamaño, más satisfacción.<br>El pollo que une y resuelve.</p>
   <div class="hero-cta">
     <a href="#menu" class="btn btn-primary">Ver Menú</a>
-    <a href="#ubicaciones" class="btn btn-secondary">14 Sucursales</a>
+    <a href="#ubicaciones" class="btn btn-secondary"> Ubicaciones </a>
   </div>
 </div>
 
@@ -431,7 +431,6 @@
     <button class="tab-btn" onclick="showTab('piezas',this)">🍖 Piezas</button>
     <button class="tab-btn" onclick="showTab('extras',this)">🍟 Extras</button>
     <button class="tab-btn" onclick="showTab('bebidas',this)">🥤 Bebidas</button>
-    <button class="tab-btn" onclick="showTab('desayunos',this)">🍳 Desayunos</button>
   </div>
 
   <div id="combos" class="menu-section active">
@@ -440,6 +439,9 @@
     <div class="menu-item"><div class="menu-item-icon">🐔</div><h4>COMBO PAREJA</h4><p>4 piezas + 2 complementos + 1 Refresco de 1.5 Litros</p><div class="price">L.235</div></div>
     <div class="menu-item"><div class="menu-item-icon">🍔</div><h4>COMBO HAMBURGUESA</h4><p>Hamburguesa de pollo + papa + refresco</p><div class="price">L.120</div></div>
     <div class="menu-item"><div class="menu-item-icon">🌮</div><h4>COMBO TACOS</h4><p>3 tacos de pollo + refresco</p><div class="price">L.145</div></div>
+    <div class="menu-item"><div class="menu-item-icon">🍗</div><h4>POLLO CHUCO </h4><p>Con tajaditas reales + refresco</p><div class="price">L.150</div></div>
+    <div class="menu-item"><div class="menu-item-icon">🍗</div><h4>CHICKEN FINGERS</h4><p>Deditos de pollo + complemento + refresco</p><div class="price">L.160</div></div>
+    <div class="menu-item"><div class="menu-item-icon">🐔</div><h4>ALITAS</h4><p> 6 Alitas con Salsita especial + complemento + refresco </p><div class="price">L.170</div></div>
   </div>
 
   <div id="piezas" class="menu-section">
@@ -465,7 +467,7 @@
 
 <!-- UBICACIONES -->
 <section id="ubicaciones" style="max-width:1100px;margin:0 auto;padding:60px 24px;">
-  <div class="section-title">14 <span>SUCURSALES</span></div>
+  <div class="section-title">11 <span>SUCURSALES</span></div>
   <p class="section-sub">Encuentra tu Pollopolis más cercano en Tegucigalpa</p>
 
   <div class="locations-layout">
@@ -506,21 +508,17 @@
 
   // ── LOCATIONS DATA ──
   const locations = [
-    { name: "Miraflores",       addr: "Col. Miraflores, frente al parque",          hours: "Lun–Dom 7:00am–10:00pm" },
+    { name: "Las Casitas",       addr: "Aldea Las Casitas calle principal",          hours: "Lun–Dom 7:00am–10:00pm" },
+    { name: "Lomas de Toncontin",addr: "Lomas de toncontin frente a redondel",    hours: "Lun–Dom 7:00am–10:00pm" },
     { name: "Tizatillo",       addr: "Tizatillo, Salida al Sur          ",          hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "Kennedy",          addr: "Col. Kennedy, Blvd. Las Fuerzas Armadas",    hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "Loarque",          addr: "Carretera Loarque, salida al sur",            hours: "Lun–Dom 6:30am–10:00pm" },
-    { name: "El Hogar",         addr: "Col. El Hogar, Av. Principal",               hours: "Lun–Dom 7:00am–9:30pm"  },
-    { name: "Comayagüela",      addr: "Centro de Comayagüela, 6ta Av.",             hours: "Lun–Dom 6:30am–10:00pm" },
-    { name: "Las Américas",     addr: "Col. Las Américas, frente a la farmacia",    hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "Villanueva",       addr: "Col. Villanueva, calle principal",           hours: "Lun–Dom 7:00am–9:00pm"  },
-    { name: "Suyapa",           addr: "Blvd. Suyapa, frente a la Universidad",     hours: "Lun–Dom 7:00am–11:00pm" },
-    { name: "Guadalupe",        addr: "Col. Guadalupe, Av. Los Próceres",           hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "Las Palmas",       addr: "Col. Las Palmas, frente al mercado",        hours: "Lun–Dom 6:30am–9:30pm"  },
-    { name: "Santa Fe",         addr: "Col. Santa Fe, calle principal",            hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "El Pedregal",      addr: "Residencial El Pedregal, entrada principal", hours: "Lun–Dom 7:00am–10:00pm" },
-    { name: "La Granja",        addr: "Col. La Granja, Blvd. Los Laureles",        hours: "Lun–Dom 7:00am–9:30pm"  },
-    { name: "Centro Histórico", addr: "Av. Cervantes, frente al Parque Central",   hours: "Lun–Dom 6:30am–10:00pm" },
+    { name: "Tiloarque",          addr: "Colonia Tiloarque, frente a crowley",            hours: "Lun–Dom 6:30am–10:00pm" },
+    { name: "La Pradera",         addr: "Col. La Pradera, Av. Principal",               hours: "Lun–Dom 7:00am–9:30pm"  },
+    { name: "El Chimbo",           addr: "El Chimbo",     hours: "Lun–Dom 7:00am–11:00pm" },
+    { name: "Prados Universitarios",        addr: "Calle Prados Universitarios",           hours: "Lun–Dom 7:00am–10:00pm" },
+    { name: "Cerro Grande",       addr: "Colinia Cerro Grande",        hours: "Lun–Dom 6:30am–9:30pm"  },
+    { name: "La Primavera",      addr: "Colonia La Primavera, Av. Principal",             hours: "Lun–Dom 6:30am–10:00pm" },
+    { name: "Mercado Perisur",     addr: "Mercado Perisur",    hours: "Lun–Dom 7:00am–10:00pm" },
+    { name: "Boulevard Morazan",       addr: "Calle Boulevard Morazan",           hours: "Lun–Dom 7:00am–9:00pm"  },
   ];
 
   const mapSrcs = [
